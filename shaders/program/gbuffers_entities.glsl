@@ -131,7 +131,7 @@ float GetLuminance(vec3 color) {
 
 //Program//
 void main() {
-    vec4 albedo = texture2D(texture, texCoord) * color;
+  vec4 albedo = texture2D(texture, texCoord) * color;
 	vec3 newNormal = normal;
 	float smoothness = 0.0;
 
