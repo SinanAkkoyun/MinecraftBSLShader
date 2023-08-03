@@ -136,7 +136,7 @@ void main() {
 	float smoothness = 0.0;
 
 	#ifdef ADVANCED_MATERIALS
-	vec2 newCoord = vTexCoord.st * vTexCoordAM.pq + vTexCoordAM.st;
+	vec2 newCoord = texCoord;//vTexCoord.st * vTexCoordAM.pq + vTexCoordAM.st;
 	float surfaceDepth = 1.0;
 	float parallaxFade = clamp((dist - PARALLAX_DISTANCE) / 32.0, 0.0, 1.0);
 	float skipAdvMat = float(entityId == 10100);
